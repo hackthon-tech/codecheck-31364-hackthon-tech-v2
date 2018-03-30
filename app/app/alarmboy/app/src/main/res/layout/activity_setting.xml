@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="net.tech.yboy.alarm.view.SettingActivity">
+
+    <RelativeLayout
+        android:background="#54a093"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="通知設定："
+                        android:textAlignment="textEnd"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"/>
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textColor="#FFFFFF"
+                        android:showText="true"
+                        android:textSize="18dp"
+                        android:text=""
+                        android:textOff="OFF"
+                        android:textOn="ON" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#54a093"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="起床時刻："
+                        android:textAlignment="textEnd"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:id="@+id/time1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"/>
+                    <Button
+                        android:id="@+id/time1Btn"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:background="@drawable/button_white"
+                        android:textColor="#7D7D7D"
+                        android:textSize="16dp"
+                        android:text="時刻設定"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#54a093"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:theme="@style/AppTheme.Design.TextInputLayout"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/departureStation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:textColor="#FFFFFF"
+                            android:hint="出発駅"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/station1Btn"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:background="@drawable/button_white"
+                        android:textColor="#7D7D7D"
+                        android:textSize="16dp"
+                        android:text="駅候補"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="#54a093"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:theme="@style/AppTheme.Design.TextInputLayout"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/arrivalStation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:inputType="text"
+                            android:hint="到着駅"
+                            android:maxLines="1"
+                            android:singleLine="true"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/station2Btn"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:elevation="2dp"
+                        android:background="@drawable/button_white"
+                        android:textColor="#7D7D7D"
+                        android:textSize="16dp"
+                        android:text="駅候補"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#54a093"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/updateBtn"
+                        style="?android:textAppearanceSmall"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/button_green"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:text="設定更新"
+                        android:layout_width="300dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

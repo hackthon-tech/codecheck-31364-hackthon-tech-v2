@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorAccent">#439185</color>
+
+    <color name="greenButtonDefault">#9CCC65</color>
+    <color name="greenButtonActive">#7CB342</color>
+    <color name="greenButtonDisable">#C5E1A5</color>
+
+    <color name="whiteButtonDefault">#FFFFFF</color>
+    <color name="whiteButtonActive">#80CBC4</color>
+    <color name="whiteButtonDisable">#EDEDED</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparency">#00000000</color>
+</resources>
