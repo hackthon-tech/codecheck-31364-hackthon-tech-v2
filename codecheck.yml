@@ -1,0 +1,3 @@
+env:
+  URL: "ここに有効なドメインを入力してください(例: https://your.domain.com)"
+test: mocha
