@@ -1,0 +1,42 @@
+
+####################################
+
+# webサーバの詳細
+####################################
+
+
+####################################
+## データベース
+## データベースはMySQL57を用いて実装しています。
+## databases名：
+####################################
+
+# DBテーブル
+create table userMaster (
+objectId VARCHAR(255) 
+, alarm tinyint(1) 
+, deviceToken VARCHAR(255) 
+, wakeUpTime DATETIME 
+, departureStation VARCHAR(255) 
+, arrivalStation VARCHAR(255) 
+, departureStationCode VARCHAR(255) 
+, arrivalStationCode VARCHAR(255) 
+, company VARCHAR(255) 
+, lastPushDate DATETIME 
+, constraint userMaster_PKC primary key (objectId)
+) CHARACTER SET utf8;
+
+
+####################################
+# クーロンの設定
+####################################
+## このクーロンは2分おきに実行される。
+## python version : 3.6.2
+02-59/2 * * * * /root/.pyenv/shims/python /var/project/hackathon-alarm-batch/index.py
+
+
+# tomcatの起動
+service tomcat8 start
+
+
+
